@@ -7,7 +7,7 @@ COPY predictor-kafkaresp.py /mnt/predictor.py
 ARG MODEL_PATH
 COPY $MODEL_PATH /opt/ml/model
 
-ENTRYPOINT ["python", "/mnt/predictor.py", "--model_dir=/opt/ml/model"]
+ENTRYPOINT ["python", "/mnt/predictor.py", "--model_location=/opt/ml/model"]
 
 #FROM ocdr/sklearnserver:0.23.2
 
