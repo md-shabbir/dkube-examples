@@ -80,6 +80,6 @@ parser.add_argument('--model_name', default=DEFAULT_MODEL_NAME,
 args, _ = parser.parse_known_args()
 
 if __name__ == "__main__":
-    model = SKLearnModel(args.model_name, args.model_dir)
+    model = SKLearnModel(args.model_name, "/opt/ml/model")
     model.load()
     kfserving.KFServer().start([model])
