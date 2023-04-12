@@ -80,3 +80,5 @@ model.fit(x_train, y_train, batch_size=batch_size, epochs=epochs, verbose=0, val
 
 tf.keras.backend.set_learning_phase(0)  # Ignore dropout at inference
 tf.saved_model.save(model,MODEL_DIR + str(1))
+
+print("sbr test 1")
