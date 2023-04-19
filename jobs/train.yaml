@@ -1,4 +1,4 @@
-#trigger-2
+#trigger-3
 name: sbr-test
 user: mohd-shabbir    # DKube login user name
 parameters:
@@ -22,7 +22,7 @@ parameters:
       datasets:
         - name: 'mohd-shabbir:mnist-git'    # <Dkube login name>:<Dataset repo name>
           mountpath: /mnist
-          version: '1681902251300'
+          #version: '1681902251300'
       outputs:
         - name: 'mohd-shabbir:mnist'    # <DKube login name>:<Model repo name>
           mountpath: /model
